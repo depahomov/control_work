@@ -1,5 +1,4 @@
 ﻿// Метод вывода массива на экран
-
 void PrintArray(string[] array)
 {
     System.Console.Write("[" + array[0]);
@@ -46,8 +45,8 @@ string[] MakeArray(string[] array)
 
 //------------------------------------------------------------------------
 //
-// Задаём массив из 4 строк
-string[] StrArray = new string[4] {"Hello", "2", "world", ":-)"};
+// Задаём массив из строк
+string[] StrArray = new string[6] {"Get", "1234", "Hello", "2", "world", ":-)"};
 // Формируем новый массив из элементов исходного массива, 
 // длина которых не больше 3 символов
 string[] NewStrArray = MakeArray(StrArray);
