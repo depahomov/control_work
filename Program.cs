@@ -14,4 +14,10 @@ void PrintArray(string[] array)
 // Задаём массив из 4 строк
 string[] StrArray = new string[4] {"Hello", "2", "world", ":-)"};
 
+// Метод подсчёта количества элементов (строк) в исходном массиве с длиной не более 3 символов 
+int CountingNum(string[] array);
+{
+    
+}
+
 PrintArray(StrArray);
