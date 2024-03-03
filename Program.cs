@@ -56,7 +56,6 @@ string[] MakeArray(string[] array)
         NewArray[0] = "";
         return NewArray;
     }
-   
 }
 
 //------------------------------------------------------------------------
