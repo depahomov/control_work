@@ -1,7 +1,6 @@
 ﻿// Метод вывода массива на экран
 void PrintArray(string[] array)
 {
-
     System.Console.Write("[" + array[0]);
     if (array.Length > 0)
     {
@@ -36,6 +35,7 @@ int CountingNum(string[] array)
 string[] MakeArray(string[] array)
 {
     int count = CountingNum(array);
+    //string[] NewArray = new string[count];
     if (count > 0)
     {
         string[] NewArray = new string[count];
@@ -48,19 +48,22 @@ string[] MakeArray(string[] array)
                 number++;
             }
         }
+        return NewArray;
     }
     else 
     {
         string[] NewArray = new string[1];
         NewArray[0] = "";
+        return NewArray;
     }
-    return NewArray;
+   
 }
 
 //------------------------------------------------------------------------
 //
 // Задаём массив из строк
-string[] StrArray = new string[4] {"1", "1234", "Hello", "world"};
+// string[] StrArray = new string[4] {"1", "1234", "Hello", "world"};
+string[] StrArray = new string[3] {"1234", "Hello", "world"};
 // Формируем новый массив из элементов исходного массива, 
 // длина которых не больше 3 символов
 string[] NewStrArray = MakeArray(StrArray);
