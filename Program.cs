@@ -10,11 +10,6 @@ void PrintArray(string[] array)
         }
     }
     System.Console.Write("]");
-    
-    // else
-    // {
-    //     System.Console.Write("[]");
-    // }
 }
 
 // Метод подсчёта количества элементов (строк) в исходном массиве с длиной не более 3 символов 
